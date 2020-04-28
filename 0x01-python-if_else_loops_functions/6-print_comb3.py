@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for w in range(0,9): 
+for w in range(0,9):
     for i in range(10):
         if  i <= w:
             continue
