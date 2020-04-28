@@ -25,6 +25,6 @@ int check_cycle(listint_t *list)
                         return(1);
                 first_list = first_list->next;
                 second_list = second_list->next->next;
-                //first_list->next;
+                second_list->next;
         }
 }
