@@ -1,0 +1,1 @@
+This project is for see diference in conditional and loops in python
