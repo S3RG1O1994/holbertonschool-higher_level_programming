@@ -4,9 +4,6 @@ def uppercase(str):
         copy = ord(str[i])
         if (copy > 96 and copy < 123):
             copy -= 32
-            copy = chr(copy)
-            print(copy, end="")
-        else:
-            copy = chr(copy)
-            print(copy, end="")
+        copy = chr(copy)
+        print(copy, end="")
     print()
