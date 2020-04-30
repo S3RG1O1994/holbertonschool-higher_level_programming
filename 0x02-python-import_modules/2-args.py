@@ -2,10 +2,12 @@
 from sys import argv
 if __name__ == '__main__':
     if len(argv) == 1:
-        print('0 arguments.')
+        print('0 argument.')
     else:
-        print('{} arguments:'.format(len(argv) - 1))
-        i = 2
+        if len(argv) == 2:
+            print('{} argument:'.format(len(argv) - 1))
+        else:
+            print('{} arguments:'.format(len(argv) - 1))
         for i in range(1, len(argv)):
             if argv == 0:
                 continue
