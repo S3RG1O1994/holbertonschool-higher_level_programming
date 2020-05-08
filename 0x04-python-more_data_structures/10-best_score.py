@@ -1,11 +1,5 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if not a_dictionary:
-        return None
-    else:
-        new_value = a_dictionary.values()
-        sum = 0
-        for value in new_value:
-            if sum < value:
-                sum = value
-        return sum
+    if a_dictionary:
+        return (max(a_dictionary, key=a_dictionary.get))
+    return None
