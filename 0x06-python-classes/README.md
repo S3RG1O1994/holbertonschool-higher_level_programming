@@ -1,0 +1,1 @@
+Init to learn programming oriented objects with python
