@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """class Square create one object instance an size for the square
     size is have validate(type data/ Value data)
 
