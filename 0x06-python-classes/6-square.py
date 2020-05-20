@@ -15,19 +15,13 @@ Returns:
 class Square:
     """class constructor"""
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     """class getter"""
     @property
     def size(self):
         return self.__size
-
-    """class getter"""
-    @property
-    def position(self):
-        return self.__position
-
     """class setter"""
     @size.setter
     def size(self, value):
@@ -36,6 +30,11 @@ class Square:
         elif value < 0:
             raise ValueError('size must be >= 0')
         self.__size = value
+
+    """class getter"""
+    @property
+    def position(self):
+        return self.__position
 
     """class setter"""
     @position.setter
