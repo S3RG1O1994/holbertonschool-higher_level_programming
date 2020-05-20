@@ -23,6 +23,7 @@ class Square:
     def size(self):
         return self.__size
 
+	"""class getter"""
     @property
     def position(self):
         return self.__position
@@ -36,6 +37,7 @@ class Square:
             raise ValueError('size must be >= 0')
         self.__size = value
 
+	"""class setter"""
     @position.setter
     def position(self, value=(0, 0)):
         if type(value) != tuple or value[0] < 0:
