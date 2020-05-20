@@ -22,6 +22,7 @@ class Square:
     @property
     def size(self):
         return self.__size
+
     """class setter"""
     @size.setter
     def size(self, value):
@@ -41,10 +42,10 @@ class Square:
     def position(self, value):
         if len(value) != 2 or type(value) != tuple:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif value[1] < 0 or value[0] < 0:
-            raise ValueError('position must be a tuple of 2 positive integers')
         elif type(value[1]) != int or type(value[0]) != int:
             raise TypeError('position must be a tuple of 2 positive integers')
+        elif value[1] < 0 or value[0] < 0:
+            raise ValueError('position must be a tuple of 2 positive integers')
         self.__position = value
 
     """class for obtain total area of the square"""
