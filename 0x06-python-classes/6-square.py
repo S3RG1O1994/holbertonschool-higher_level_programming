@@ -44,6 +44,8 @@ class Square:
             raise TypeError('position must be a tuple of 2 positive integers')
         elif value[1] < 0 or value[0] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
+        elif type(value[1]) != int or type(value[0]) != int:
+            raise ValueError('position must be a tuple of 2 positive integers')
         self.__position = value
 
     """class for obtain total area of the square"""
