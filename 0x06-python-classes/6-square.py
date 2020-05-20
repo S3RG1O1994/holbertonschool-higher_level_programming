@@ -49,7 +49,7 @@ class Square:
         self.__position = value
 
     """class for obtain total area of the square"""
-    def area(self, size=0):
+    def area(self):
         return self.__size * self.__size
 
     """method for print object based in his size with space """
