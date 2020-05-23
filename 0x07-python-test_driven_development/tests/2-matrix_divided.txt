@@ -1,0 +1,86 @@
+Test for matrix_divided() in 2-matrix_divided.py
+==========================================
+
+Usign 'matrix_divided?
+
+Import the function:
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+==========================================
+    #Case 1
+
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+
+    #Case2
+
+    None arguments
+
+    >>> matrix_divided(None, None)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    #Case3
+    Only one argument
+
+    >>> matrix_divided(5)
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    #Case4
+    >>> matrix_divided([1,9])
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    #Case5
+    >>> matrix_divided('str')
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+    #Case6
+    >>> matrix_divided(1, 5)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    #Case7
+    >>> matrix_divided('str', 5)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    #Case8
+    >>> matrix_divided([10, 20], 5)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    #Case9
+    >>> matrix_divided([[10, 20], 30, 40], 5)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    #Case10
+    No int or float elements
+    >> matrix_divided
+
+    #Case11
+    No same size
+    >> matrix_divided
+
+    #Case12
+    Div not a number
+    >> matrix_divided
+
+    Case13
+    Div equal to zero
+    >> matrix_divided
+
+    Case14
+    Long float numbers
+    >> matrix_divided
+
+    Case15
+    Divide by infinite num
+    >> matrix_divided
+
+===========================================================

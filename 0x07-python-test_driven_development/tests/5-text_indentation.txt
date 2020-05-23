@@ -1,0 +1,45 @@
+Test def text_indentation(text): in 5-text_indentation.py
+========================================================================
+
+Using 'text_indentation?
+
+import the function:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+========================================================================
+
+	#Case1
+	>>> text_indentation(5)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	#Case2
+	>>> text_indentation('a')
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	#Case3
+	>>> text_indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+	#Case5
+	>>> text_indentation([])
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	#Case6
+	>>> text_indentation([5,6,7,8])
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	#Case7
+	>>> text_indentation((5,6))
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	#Case8
+	>>> text_indentation({})
+	Traceback (most recent call last):
+	TypeError: text must be a string
+

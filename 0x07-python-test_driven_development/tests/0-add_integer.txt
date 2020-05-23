@@ -1,0 +1,58 @@
+The test for function add_integer() in 0-add_integer.py
+==========================================
+
+This file is for test function add_integer
+==========================================
+
+Using 'add_integer'
+
+Import the function
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+==========================================
+
+#Case1
+    >>> add_integer()
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+#Case2
+    >>> add_integer(2,3,20)
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+#Case3
+    >>> add_integer(1, (2, 30))
+    TypeError: b must be an integer
+
+#Case4
+    >>> add_integer(-100, [-2, 'h'])
+    TypeError: b must be an integer
+
+#Case5
+    >>> add_integer((2, 30), 80)
+    TypeError: a must be an integer
+
+#Case6
+    >>> add_integer([-2, 'h'])
+    TypeError: a must be an integer
+
+#Case7
+    >>> add_integer(1, 2 + 3)
+    6
+
+#Case8
+    >>> add_integer(1, int('40'))
+    41
+
+#Case9
+    >>> add_integer(20, 'Esto esta muy loco')
+    TypeError: b must be an integer
+
+#Case10
+    >>> add_integer('Esto sigue estando muy loco')
+    TypeError: a must be an integer
+
+#Case11
+    >>> add_integer(None)
+    TypeError: a must be an integer
+
+============================================
