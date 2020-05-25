@@ -1,0 +1,1 @@
+This project is for practice about class and methods in python
