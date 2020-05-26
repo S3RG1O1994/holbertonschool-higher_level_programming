@@ -65,5 +65,6 @@ class Rectangle:
         for col in range(self.height):
             for str in range(self.width):
                 string += '#'
-            string += '\n'
+            if col != self.height - 1:
+                string += '\n'
         return string
