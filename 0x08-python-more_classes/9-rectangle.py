@@ -14,6 +14,7 @@ Returns:
     [attribute] -- [Attribute private change to public]
 """
 
+
 class Rectangle:
     """
     A Rectangle class with attributes width and height, and
