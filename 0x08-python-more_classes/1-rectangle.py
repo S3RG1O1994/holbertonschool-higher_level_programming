@@ -15,13 +15,13 @@ Returns:
 class Rectangle:
     """Class constructor"""
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     """class getter"""
     @property
     def width(self):
-        return self.__width
+        return self.width
 
     """Class setter"""
     @width.setter
@@ -35,7 +35,7 @@ class Rectangle:
     """class getter"""
     @property
     def height(self):
-        return self.__height
+        return self.height
 
     """Class setter"""
     @height.setter
