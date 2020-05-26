@@ -48,9 +48,9 @@ class Rectangle:
         self.__height = value
 
     """method for print area the object instances"""
-    def area(self, __width=0, __height=0):
-        return self.__width * self.__height
+    def area(self):
+        return self.width * self.height
 
     """method for print perimeter the object instances"""
-    def perimeter(self, __width=0, __height=0):
-        return (self.__width * 2) + (self.__height * 2)
+    def perimeter(self):
+        return (self.width * 2) + (self.height * 2)
