@@ -4,11 +4,7 @@
 
 
 class MyList(list):
-    """print_sorted print an list in sorted
-
-    Arguments:
-        list {list} -- [superclass list of python]
-    """
+    """print_sorted print an list in sorted"""
 
     def print_sorted(self):
         """Print list sorted"""
