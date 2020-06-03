@@ -1,0 +1,67 @@
+The test for function print_sorted() in 1-my_list.py
+==========================================
+
+This file is for test function print_sorted
+==========================================
+
+Using 'print_sorted'
+
+Import the function
+    >>> MyList = __import__('1-my_list').MyList
+
+==========================================
+
+#Case1
+>>> other_list = MyList()
+>>> other_list.append(3)
+>>> other_list.append(4)
+>>> other_list.append(5)
+>>> other_list.append(6)
+>>> other_list.append(7)
+>>> other_list.append(18)
+>>> other_list.print_sorted()
+[3, 4, 5, 6, 7, 18]
+
+#Case2
+>>> proof = MyList()
+>>> proof.append(3)
+>>> proof.append(24)
+>>> proof.append(89)
+>>> proof.append(6)
+>>> proof.print_sorted()
+[3, 6, 24, 89]
+
+#case3
+>>> other_list.append(-6)
+>>> other_list.append(11)
+>>> other_list.print_sorted()
+[-6, 3, 4, 5, 6, 7, 11, 18]
+
+#case4
+>>> l = MyList()
+>>> l.append(-7)
+>>> l.append(-26)
+>>> l.append(-23)
+>>> l.append(-4)
+>>> l.append(-30)
+>>> l.print_sorted()
+[-30, -26, -23, -7, -4]
+
+#case5
+>>> l = MyList(2)
+Traceback (most recent call last):
+TypeError: 'int' object is not iterable
+
+#case6
+>>> issubclass(MyList, list)
+True
+
+#case7
+>>> issubclass(list, MyList)
+False
+
+#case8
+>>> l = MyList()
+>>> l.print_sorted()
+[]
+============================================
