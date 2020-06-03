@@ -24,11 +24,17 @@ class BaseGeometry:
             raise ValueError('<name> must be greater than 0')
         self.name = name
 
-    """[class Rectangle is for create an object]
-    """
+"""[class Rectangle is for create an object]
+"""
 
 
 class Rectangle(BaseGeometry):
+    """[class Rectangle]
+
+    Arguments:
+        BaseGeometry {[class]} -- [super class]
+    """
+
     def __init__(self, width, height):
         self.integer_validator("width", width)
         self.__width = width
