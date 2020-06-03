@@ -46,7 +46,7 @@ class Rectangle(BaseGeometry):
     """[edit str method for this method]
     """
     def __str__(self):
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
 
     """[method for find area of an rectangle]
     """
