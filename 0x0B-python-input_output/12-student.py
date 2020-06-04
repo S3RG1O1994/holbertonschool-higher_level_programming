@@ -19,6 +19,8 @@ class Student:
     """
 
     def to_json(self, attrs=None):
+        """method for return dictionary"""
+
         if isinstance(attrs, list) and all(isinstance(attr, str)
                                         for attr in attrs):
             rta = {}
