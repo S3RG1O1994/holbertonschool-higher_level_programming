@@ -22,7 +22,7 @@ class Student:
         """method for return dictionary"""
 
         if isinstance(attrs, list) and all(isinstance(attr, str)
-                                        for attr in attrs):
+                                           for attr in attrs):
             rta = {}
             for i in attrs:
                 if i in self.__dict__:
