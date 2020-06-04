@@ -7,7 +7,7 @@ Returns:
 
 
 class Student:
-    """[class constructor]
+    """[Class Constructor]
     """
 
     def __init__(self, first_name, last_name, age):
@@ -15,11 +15,14 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    """[method create JSON]
+    """[Class create JSON]
     """
+
     def to_json(self, attrs=None):
+        """method for return dictionary"""
+
         if isinstance(attrs, list) and all(isinstance(attr, str)
-                                            for attr in attrs):
+                                           for attr in attrs):
             rta = {}
             for i in attrs:
                 if i in self.__dict__:
@@ -30,5 +33,7 @@ class Student:
     """[Method create dict]
     """
     def reload_from_json(self, json):
+        """Method change atribbute """
+
         for atr in json:
             self.__dict__[atr] = json[atr]
