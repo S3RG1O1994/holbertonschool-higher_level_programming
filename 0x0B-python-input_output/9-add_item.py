@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""[Script for create JSON]
+"""
+file: 9-add_item.py
+[Script for create JSON]
 """
 from os import path
 from sys import argv
