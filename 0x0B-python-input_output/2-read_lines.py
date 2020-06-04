@@ -4,6 +4,8 @@
 
 
 def read_lines(filename="", nb_lines=0):
+    """[Function for read an number of lines]"""
+
     with open(filename, mode='r', encoding='utf-8') as f:
         if nb_lines <= 0:
             print(f.read())
