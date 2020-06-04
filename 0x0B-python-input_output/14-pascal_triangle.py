@@ -4,6 +4,8 @@
 
 
 def pascal_triangle(n):
+    """print pascal triangle"""
+
     pascal = list()
     if n == 0:
         return pascal
