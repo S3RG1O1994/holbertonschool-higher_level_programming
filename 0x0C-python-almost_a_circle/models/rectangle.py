@@ -26,7 +26,7 @@ class Rectangle(Base):
         """[Modification str for print]
         """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format
-        (self.id, self.x, self.y, self.width, self.height))
+                (self.id, self.x, self.y, self.width, self.height))
 
     def validate(self, name, value):
         """[method validate data]
