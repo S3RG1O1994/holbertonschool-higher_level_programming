@@ -23,12 +23,15 @@ class Rectangle(Base):
         super().__init__(id)
 
     def __str__(self):
+        """[Modification str for print]
+        """
         string = '[Rectangle] ({}) {}/{} - {}/{}'
-        return string.format(self.id, self.__x, self.__y, self.__width, self.__height)
+        return string.format
+                (self.id, self.__x, self.__y, self.__width, self.__height)
 
-    """[method validate data]
-    """
     def validate(self, name, value):
+        """[method validate data]
+        """
         dimensions = ['width', 'height']
         if type(value) != int:
             raise TypeError('{} must be an integer'.format(name))
@@ -37,89 +40,88 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError('{} must be >= 0'.format(name))
 
-    """[Change attribute width]
-    """
     @property
     def width(self):
+        """[Change attribute width]
+        """
         return self.__width
 
-    """[Change attribute width]
-    """
     @width.setter
     def width(self, value):
+        """[Change attribute width]
+        """
         self.validate('width', value)
         self.__width = value
 
-    """[Change attribute height]
-    """
     @property
     def height(self):
+        """[Change attribute height]
+        """
         return self.__height
 
-    """[Change attribute height]
-    """
     @height.setter
     def height(self, value):
+        """[Change attribute height]
+        """
         self.validate('height', value)
         self.__height = value
 
-    """[Change attribute x]
-    """
     @property
     def x(self):
+        """[Change attribute x]
+        """
         return self.__x
 
-    """[Change attribute x]
-    """
     @x.setter
     def x(self, value):
+        """[Change attribute x]
+        """
         self.validate('x', value)
         self.__x = value
 
-    """[Change attribute y]
-    """
     @property
     def y(self):
+        """[Change attribute y]
+        """
         return self.__y
 
-    """[Change attribute y]
-    """
     @y.setter
     def y(self, value):
+        """[Change attribute y]
+        """
         self.validate('y', value)
         self.__y = value
 
-    """[Method for find area of an instance]
-    """
     def area(self):
+        """[Method for find area of an instance]
+        """
         return self.__width * self.__height
 
     def display(self):
+        """[Function print form of an instance]
+        """
         for col in range(self.__height):
             print(' ' * self.__x, end="")
             for item in range(self.width):
                 print('#', end="")
             print()
 
-    def update(self, *args):
-        new_list = [items for items in args]
-        if len(new_list) == 1:
-            self.id = new_list[0]
-        if len(new_list) == 2:
-            self.id = new_list[0]
-            self.__width = new_list[1]
-        if len(new_list) == 3:
-            self.id = new_list[0]
-            self.__width = new_list[1]
-            self.__height = new_list[2]
-        if len(new_list) == 4:
-            self.id = new_list[0]
-            self.__width = new_list[1]
-            self.__height = new_list[2]
-            self.__x = new_list[3]
-        if len(new_list) == 5:
-            self.id = new_list[0]
-            self.__width = new_list[1]
-            self.__height = new_list[2]
-            self.__x = new_list[3]
-            self.__y = new_list[4]
+    def update(self, *args, **kwargs):
+        """[Function for update data]
+        """
+        atr = ["id", "width", "height", "x", "y"]
+        for atr, arg in zip(atr, args):
+            setattr(self, atr, arg)
+        for keys, value in kwargs.items():
+            setattr(self, keys, value)
+
+    def to_dictionary(self):
+        """[Method for create an dictionary]
+        """
+        atr = {}
+        atr["id"] = self.id
+        atr["width"] = self.width
+        atr["height"] = self.height
+        atr["x"] = self.x
+        atr["y"] = self.y
+        return atr
