@@ -7,6 +7,7 @@ import os
 
 
 class Base:
+    """Class Base"""
     __nb_objects = 0
 
     """[Class constructor]
