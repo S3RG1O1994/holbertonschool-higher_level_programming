@@ -102,7 +102,7 @@ class Rectangle(Base):
         figure = ('\n' * self.__y)
         for col in range(self.__height):
             figure += (' ' * self.__x)
-            figure += ('#', * self.__width) + '\n'
+            figure += ('#' * self.__width) + '\n'
         print(figure, end="")
 
     def update(self, *args, **kwargs):
