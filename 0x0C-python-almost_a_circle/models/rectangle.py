@@ -99,11 +99,11 @@ class Rectangle(Base):
     def display(self):
         """[Function print form of an instance]
         """
+        figure = ('\n' * self.__y)
         for col in range(self.__height):
             print(' ' * self.__x, end="")
-            for item in range(self.width):
-                print('#', end="")
-            print()
+            print('#', * self.__width) + '\n'
+        print(figure, end="")
 
     def update(self, *args, **kwargs):
         """[Function for update data]
