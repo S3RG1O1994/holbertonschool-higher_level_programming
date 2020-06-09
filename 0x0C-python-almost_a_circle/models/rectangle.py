@@ -25,15 +25,14 @@ class Rectangle(Base):
     def __str__(self):
         """[Modification str for print]
         """
-        string = '[Rectangle] ({}) {}/{} - {}/{}'
-        return string.format
-                (self.id, self.__x, self.__y, self.__width, self.__height)
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format
+        (self.id, self.x, self.y, self.width, self.height))
 
     def validate(self, name, value):
         """[method validate data]
         """
         dimensions = ['width', 'height']
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError('{} must be an integer'.format(name))
         if value <= 0 and name in dimensions:
             raise ValueError('{} must be > 0'.format(name))
