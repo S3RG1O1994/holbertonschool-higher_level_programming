@@ -46,11 +46,11 @@ class Base:
         file = cls.__name__ + '.json'
 
         for items in list_objs:
-            new_list.append(items.to_dictionary(items))
+            new_list.append(items.to_dictionary())
 
         with open(file, mode='w', encoding='utf-8') as file:
             s = json.dumps(new_list)
-            file.write(s)
+            file.write(cls.to_json_string(new_list))
 
     @classmethod
     def create(cls, **dictionary):
