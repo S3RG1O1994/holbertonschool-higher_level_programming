@@ -1,2 +1,2 @@
--- Consult
-SELECT count(*) FROM first_table where id = 89;
+--Consult
+SELECT count(*) FROM first_table WHERE id = 89;
