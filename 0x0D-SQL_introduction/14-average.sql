@@ -1,2 +1,2 @@
 -- This script for find range of numbers in table
-SELECT score FROM second_table AVG(score);
+SELECT AVG(score) AS average FROM second_table;
