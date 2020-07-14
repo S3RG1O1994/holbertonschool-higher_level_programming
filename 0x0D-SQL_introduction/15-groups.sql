@@ -1,2 +1,2 @@
 -- This new exercise
-SELECT count(score) AS number FROM second_table WHERE score = score;
+SELECT score, count(score) AS number FROM second_table GROUP BY score DESC;
