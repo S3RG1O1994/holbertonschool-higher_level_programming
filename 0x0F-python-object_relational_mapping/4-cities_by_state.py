@@ -11,8 +11,9 @@ if __name__ == '__main__':
     DB = sys.argv[3]
     db = MySQLdb.connect(user=Uname, passwd=Upasswd, db=DB)
     pointer = db.cursor()
-    pointer.execute('SELECT cities.id, cities.name, state_id  FROM cities \
-            INNER JOIN states ON cities.state_id = states.id ORDER BY cities.id;')
+    pointer.execute('SELECT cities.id, cities.name, states.name FROM cities\
+            INNER JOIN states ON cities.state_id = states.id\
+            ORDER BY cities.id')
     row = pointer.fetchall()
     for items in row:
         print(items)
