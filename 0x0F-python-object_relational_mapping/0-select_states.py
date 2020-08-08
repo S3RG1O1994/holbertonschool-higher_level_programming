@@ -11,7 +11,7 @@ if __name__ == '__main__':
     DB = sys.argv[3]
     db = MySQLdb.connect(user=Uname, passwd=Upasswd, db=DB)
     pointer = db.cursor()
-    pointer.execute("SELECT * FROM states ORDER BY states_id ASC")
+    pointer.execute('SELECT * FROM states ORDER BY states_id ASC;')
     row = pointer.fetchall()
     for items in row:
         print(items)
