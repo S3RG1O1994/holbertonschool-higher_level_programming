@@ -15,6 +15,7 @@ if __name__ == '__main__':
     pointer.execute(query)
     row = pointer.fetchall()
     for items in row:
-        print(items)
+        if items[1][0] == 'N':
+            print(items)
     pointer.close()
     db.close()
