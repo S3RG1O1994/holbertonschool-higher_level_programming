@@ -12,8 +12,8 @@ if __name__ == '__main__':
 	searched = sys.argv[4]
 	db = MySQLdb.connect(user=Uname, passwd=Upasswd, db=DB)
 	pointer = db.cursor()
-	query = 'SELECT * FROM states WHERE name LIKE %s\
-			ORDER BY states.id, (searched, )'
+	query = ("SELECT * FROM states WHERE name LIKE %s\
+			ORDER BY states.id", (searched, ))
 	pointer.execute(query)
 	row = pointer.fetchall()
 	for items in row:
