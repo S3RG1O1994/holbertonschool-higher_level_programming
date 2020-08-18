@@ -1,3 +1,3 @@
 #!/bin/bash
 # This script search body in the root
-curl -L "$1"
+curl -sL "$1"
