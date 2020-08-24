@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''This function is print response with id of the site-web'''
-from urllib import request, parse 
+from urllib import request, parse
 import sys
 
 
