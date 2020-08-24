@@ -10,5 +10,5 @@ if __name__ == '__main__':
     email = email.encode('ascii')
     request = request.Request(url, email)
     with request.urlopen(request) as response:
-        the_page = response.read
+        the_page = response.read()
         print(the_page.decode('utf-8'))
