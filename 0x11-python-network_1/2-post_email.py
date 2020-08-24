@@ -9,5 +9,5 @@ if __name__ == '__main__':
     email = email.encode('ascii')
     request = request.Request(sys.argv[1], email)
     with request.urlopen(request) as response:
-        the_page = response.read()
-        print(the_page.decode('utf-8'))
+        body = response.read()
+        print(body.decode('utf-8'))
