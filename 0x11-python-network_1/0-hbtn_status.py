@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import urllib.request
 '''This function is for print status of an site-web'''
+import urllib.request
 
 
 if __name__ == '__main__':
