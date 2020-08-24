@@ -5,10 +5,9 @@ import sys
 
 
 if __name__ == '__main__':
-    url = sys.argv[1]
-    email = parse.urlencode({'email' : sys.argv[2]})
+    email = parse.urlencode({'email': sys.argv[2]})
     email = email.encode('ascii')
-    request = request.Request(url, email)
+    request = request.Request(sys.argv[1], email)
     with request.urlopen(request) as response:
         the_page = response.read()
         print(the_page.decode('utf-8'))
