@@ -5,14 +5,11 @@ import sys
 
 if __name__ == '__main__':
     letter = {'q': ''}
-    
     try:
         letter['q'] = sys.argv[1]
     else:
         pass
-    
     rqt = requests.post('http://0.0.0.0:5000/search_user', letter)
-    
     try:
         result = rqt.json()
         if result:
