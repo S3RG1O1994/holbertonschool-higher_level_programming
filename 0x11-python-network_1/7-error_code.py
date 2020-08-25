@@ -8,4 +8,4 @@ if __name__ == '__main__':
     if rqt.status_code < 400:
         print(rqt.text)
     else:
-        print('Error code: {}'.format(rqt.status_code))
+        print('Error code:', rqt.status_code)
