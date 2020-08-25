@@ -7,7 +7,7 @@ if __name__ == '__main__':
     letter = {'q': ''}
     try:
         letter['q'] = sys.argv[1]
-    else:
+    except:
         pass
     rqt = requests.post('http://0.0.0.0:5000/search_user', letter)
     try:
