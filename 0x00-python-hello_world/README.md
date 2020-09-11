@@ -59,6 +59,17 @@ What you should learn from this project:
 ### [10. Linked list cycle](./10-check_cycle.c)
 * Technical interview preparation: 
 
+
+### [11. Hello,Write](./100-write.py)
+* Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+
+
+### [12. Compile](./101-compile.py)
+* The Python file name will be stored in the environment variable $PYFILE.
+
+### [13.  ByteCode -> Python #1](./102-magic_calculation.py)
+* The Python file name will be stored in the environment variable $PYFILE.
+
 ---
 ## Author
 * **Sergio Diaz** - [SERGIO1994](https://github.com/S3RG1O1994)
