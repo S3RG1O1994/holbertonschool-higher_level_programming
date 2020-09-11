@@ -61,6 +61,19 @@ What you should learn from this project:
 ### [10. Only by 2](./10-divisible_by_2.py)
 * Write a function that finds all multiples of 2 in a list.
 
+
+### [11. Delete at](./11-delete_at.py)
+* Write a function that deletes the item at a specific position in a list.
+
+
+### [12. Switch](./12-switch.py)
+* Complete the source code in order to switch value of a and b
+
+
+### [13. Linked list palindrome](./13-is_palindrome.c)
+* Technical interview preparation: 
+
+
 ---
 ## Author
 * **Sergio Diaz** - [SERGIO1994](https://github.com/S3RG1O1994)
