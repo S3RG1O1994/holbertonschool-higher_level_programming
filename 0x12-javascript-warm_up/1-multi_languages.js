@@ -1,6 +1,4 @@
 #!/usr/bin/node
-const Programming = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-let item;
-for (item in Programming) {
-  console.log(Programming[item]);
-}
+console.log('C is fun');
+console.log('Python is cool');
+console.log('Javascript is amazing');
