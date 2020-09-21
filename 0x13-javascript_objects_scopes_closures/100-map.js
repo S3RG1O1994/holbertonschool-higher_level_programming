@@ -2,5 +2,5 @@
 
 let list = require('./100-data').list;
 console.log(list);
-list = list.map(x => (x - 1) * x);
+list = list.map((elm, idx) => elm * idx);
 console.log(list);
