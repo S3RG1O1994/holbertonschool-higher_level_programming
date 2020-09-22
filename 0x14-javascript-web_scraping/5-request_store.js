@@ -8,11 +8,7 @@ function createFile (url, path) {
     if (err) {
       return console.log(err);
     }
-    var stream = fs.createWriteStream(path);
-    stream.once('open', (fd) => {
-      stream.write(body);
-      stream.end();
-    });
+    fs.writeFileSync(path, body, 'utf-8');
   });
 }
 
